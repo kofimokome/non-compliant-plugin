@@ -8,7 +8,7 @@
 
 $text_domain = 'non-compliant-plugin';
 
-register_text_domain( $text_domain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+load_plugin_textdomain( $text_domain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 $some_title = __( 'Some translated title', $text_domain );
 
