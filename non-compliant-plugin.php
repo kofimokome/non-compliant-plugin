@@ -6,10 +6,6 @@
 * Version: 0.0.1
 */
 
-$text_domain = 'non-compliant-plugin';
-
-load_plugin_textdomain( $text_domain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
-$some_title = __( 'Some translated title', $text_domain );
+$some_title = __( 'Some translated title', 'non-compliant-plugin' );
 
 require plugin_dir_path( __FILE__ ) . 'another-file.php';
